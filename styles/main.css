@@ -9,12 +9,12 @@
 
 .title {
   font-size: 20px;
-  margin: 30px 0 30px 0; }
+  margin: 35px 0 10px 0; }
 
-.title, .autor__name {
+.title, .avatar__name {
   color: #f2f2f2; }
 
-.paragraph, .tempo, .info__autor {
+.paragraph, .tempo, .info__avatar {
   color: #88AADD;
   font-weight: 300; }
 
@@ -22,8 +22,11 @@
   color: #00FFFF;
   font-weight: 700; }
 
+body {
+  background: #001122; }
+
 main {
-  height: 300px;
+  height: 470px;
   width: 90%;
   margin: auto;
   margin-top: 30px;
@@ -31,8 +34,69 @@ main {
   border-radius: 15px; }
 
 .align__div {
-  background: red;
   width: 90%;
   margin: auto; }
+
+.img__hero {
+  height: 250px;
+  width: 100%;
+  position: relative;
+  top: 20px;
+  background: url("../images/image-equilibrium.jpg") no-repeat;
+  background-size: 100% 250px;
+  border-radius: 10px; }
+
+.section__info {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #224455; }
+  .section__info .valor, .section__info .tempo {
+    display: flex;
+    align-items: center; }
+  .section__info .icons {
+    margin-right: 5px;
+    height: 16px; }
+
+.section__avatar {
+  margin-top: 15px;
+  display: flex;
+  align-items: center; }
+
+.avatar__foto {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  border: 2px solid #778888;
+  border-radius: 50%; }
+
+@media (min-width: 360px) {
+  main {
+    height: 570px;
+    max-width: 350px; }
+
+  .img__hero {
+    height: 300px;
+    width: 100%;
+    background-size: 100% 300px;
+    border-radius: 10px; }
+
+  .title {
+    margin: 45px 0 20px 0; }
+
+  .section__info {
+    height: 65px; }
+
+  .section__avatar {
+    margin-top: 15px;
+    display: flex;
+    align-items: center; }
+
+  .avatar__foto {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    border: 2px solid #778888;
+    border-radius: 50%; } }
 
 /*# sourceMappingURL=main.css.map */
