@@ -11,8 +11,13 @@
 
 // === Tipografia ===
 .title{
-  font-size: 20px;
+  font-size: 18px;
   margin: 35px 0 10px 0;
+}
+
+.title:hover, .avatar__name:hover{
+  color: #00FFFF;
+  cursor: pointer;
 }
 .title, .avatar__name{
   color: #f2f2f2;
@@ -21,14 +26,23 @@
   color: #88AADD;
   font-weight: 300;
 }
+.paragraph{
+  line-height: 20px;
+}
 .valor{
   color: #00FFFF;
   font-weight: 700;
 }
-
+// === Display ===
+.section__info, .valor, .tempo, .section__avatar{
+  display: flex;
+}
+.valor, .tempo, .section__avatar{
+  align-items: center;
+}
 // === Body ===
 body{
-  background: #001122;
+  background: #0d1a2d;
 }
 
 // === Main ===
@@ -39,6 +53,8 @@ main{
   margin-top: 30px;
   background-color: #112233;
   border-radius: 15px;
+  outline-width: 0 1 1 1;
+  outline: 30px solid #0c192c;
 }
 // === Aling Div ===
 .align__div{
@@ -56,17 +72,40 @@ main{
   background-size: 100% 250px;
   border-radius: 10px;
 }
+.img__hero--hover{
+  height: 260px;
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+}
+.img__hero--hover:hover{
+  content: '';
+  background: hsla(178, 100%, 50%, 0.5);
+  cursor: pointer;
+  z-index: 0;
+}
+.img__hero--hover-icon{
+  height: 30px;
+  width: 45px;
+  position: relative;
+}
+.img__hero--hover-icon:hover{
+  content: '';
+  background: url("../images/icon-view.svg") no-repeat;
+  background: red;
+  top: 50%;
+  margin-top: -15px;
+  left: 50%;
+  margin-left: -22px;
+  z-index: 1;
+}
+
 
 // === Section Info ===
 .section__info{
   height: 50px;
-  display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #224455;
-  .valor, .tempo{
-    display: flex;
-    align-items: center;
-  }
   .icons{
     margin-right: 5px;
     height: 16px;
@@ -76,8 +115,6 @@ main{
 // === Section Avatar ===
 .section__avatar{
   margin-top: 15px;
-  display: flex;
-  align-items: center;
 }
 .avatar__foto{
   height: 30px;
@@ -90,33 +127,14 @@ main{
 // === Media Querie ===
 @media(min-width: 360px){
   main{
-    height: 570px;
-    max-width: 350px;
+    height: 500px;
+    max-width: 300px;
+    margin-top: 10px;
   }
   // === Img Hero ===
   .img__hero{
-    height: 300px;
-    width: 100%;
-    background-size: 100% 300px;
-    border-radius: 10px;
-  }
-  .title{
-    margin: 45px 0 20px 0;
-  }
-  .section__info{
-    height: 65px;
-  }
-  // === Section Avatar ===
-  .section__avatar{
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-  }
-  .avatar__foto{
-    height: 30px;
-    width: 30px;
-    margin-right: 10px;
-    border: 2px solid #778888;
-    border-radius: 50%;
+    height: 260px;
+    width: 270px;
+    background-size: 270px 260px;
   }
 }
