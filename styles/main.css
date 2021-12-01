@@ -61,32 +61,20 @@ main {
   background-size: 100% 250px;
   border-radius: 10px; }
 
+.img__hero::after:hover {
+  content: '';
+  background: rgba(0, 255, 247, 0.5); }
+
 .img__hero--hover {
   height: 260px;
   width: 100%;
-  border-radius: 10px;
-  position: absolute; }
+  border-radius: 10px; }
 
 .img__hero--hover:hover {
-  content: '';
-  background: rgba(0, 255, 247, 0.5);
-  cursor: pointer;
-  z-index: 0; }
-
-.img__hero--hover-icon {
-  height: 30px;
-  width: 45px;
-  position: relative; }
-
-.img__hero--hover-icon:hover {
-  content: '';
-  background: url("../images/icon-view.svg") no-repeat;
-  background: red;
-  top: 50%;
-  margin-top: -15px;
-  left: 50%;
-  margin-left: -22px;
-  z-index: 1; }
+  background: rgba(0, 255, 247, 0.5) url("../images/icon-view.svg") no-repeat;
+  background-position: center;
+  background-size: 48px 48px;
+  cursor: pointer; }
 
 .section__info {
   height: 50px;
