@@ -10,7 +10,6 @@ Esta é a minha solução para o desafio [NFT preview card component challenge o
 - [Meu processo](#meu-processo)
     - [Ferramentas](#ferramentas)
     - [O que eu aprendi](#o-que-eu-aprendi)
-- [Referencias](#referencia)
 
 
 ## Desafio
@@ -50,6 +49,3 @@ Foi proposto recriar o seguinte site, fazendo o mais semelhante possível, a par
 - Bordas
 - Elementos de texto
 
-## Referencias
-- Link 1
-- Link 2
